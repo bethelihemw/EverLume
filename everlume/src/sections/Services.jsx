@@ -1,8 +1,9 @@
 import web from "../assets/web.png";
-import brand from "../assets/branding.png";
+import brand from "../assets/brand.png";
 import appdev from "../assets/appdev.png"; // Ensure this is imported
 import consult from "../assets/consult.png";
 import uiux from "../assets/uiux.png";
+import ai from "../assets/ai.png";
 function Services() {
   return (
     <section id="services" className="services-section">
@@ -14,11 +15,43 @@ function Services() {
 
         <div className="services-grid">
           {[
-            { img: web, title: "Web Development", desc: "High-performance MERN applications.", delay: "0.1s" },
-            { img: appdev, title: "Mobile App Development", desc: "High-performance MERN applications.", delay: "0.1s" },
-            { img: uiux, title: "UI/UX Design", desc: "User-centric interfaces that convert.", delay: "0.2s" },
-            { img: brand, title: "Branding", desc: "Visual identities that resonate.", delay: "0.3s" },
-            { img: consult, title: "Consulting", desc: "Expert scaling and tech strategy.", delay: "0.4s" }
+            { 
+      img: web, 
+      title: "Web Development", 
+      desc: "Architecting scalable, full-stack solutions with the MERN and Next.js ecosystem.", 
+      delay: "0.1s" 
+    },
+    { 
+      img: appdev, 
+      title: "Mobile Development", 
+      desc: "Building native-feel, offline-first mobile applications using React Native and Expo.", 
+      delay: "0.15s" 
+    },
+    { 
+      img: uiux, 
+      title: "UI/UX Design", 
+      desc: "Crafting pixel-perfect, minimalist interfaces focused on user engagement and accessibility.", 
+      delay: "0.2s" 
+    },
+    { 
+      img: brand, 
+      title: "Branding", 
+      desc: "Developing sacred and professional visual identities that define your digital presence.", 
+      delay: "0.25s" 
+    },
+    { 
+      img: consult, 
+      title: "Strategic Consulting", 
+      desc: "Expert technical guidance on tech stack selection, architecture, and digital scaling.", 
+      delay: "0.3s" 
+    },
+    { 
+      img: ai, 
+      title: "Distributed Systems", 
+      desc: "Implementing robust consensus mechanisms and RPC protocols for high-availability systems.", 
+      delay: "0.35s" 
+    }
+
           ].map((service, index) => (
             <div className="lively-card" key={index} style={{ "--delay": service.delay }}>
               <div className="image-container">

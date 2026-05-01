@@ -21,7 +21,7 @@ body {
   --primary: #0F2A44;
   --accent: #F59E0B;
   --bg-light: #F8FAFC;
-  --text-dark: #111827;
+  --text-dark: #0b1425;
   --white: #ffffff;
 }
 body {
@@ -41,7 +41,7 @@ body {
 
 /* Color Variables based on logo */
 :root {
-  --deep-blue: #00235B;
+  --deep-blue: #01173b;
   --vibrant-orange: #FF9500;
   --white: #ffffff;
   --glass-bg: rgba(255, 255, 255, 0.8);
@@ -53,6 +53,7 @@ body {
   top: 0;
   left: 0;
   padding: 1rem 0;
+  /* blur:10px; */
   background: transparent;
   transition: all 0.4s ease;
   z-index: 1000;
@@ -61,7 +62,7 @@ body {
 /* Glassmorphism effect when scrolling */
 .navbar-scrolled {
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   padding: 0.6rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 35, 91, 0.1);
@@ -145,6 +146,7 @@ body {
   display: none;
   flex-direction: column;
   gap: 6px;
+  
   cursor: pointer;
 }
 
@@ -163,8 +165,8 @@ body {
     top: 100%;
     right: -100%;
     flex-direction: column;
-    background: white;
-    width: 100%;
+    background: var(--deep-blue);
+    width: 40%;
     height: 100vh;
     padding-top: 50px;
     transition: 0.5s;
@@ -175,19 +177,96 @@ body {
     right: 0;
   }
 }
-/* .navbar {
+
+:root {
+  --nav-bg-scrolled: #00235b; /* Deep blue from your logo */
+  --nav-text: #ffffff;
+  --nav-accent: #ff9500; /* Vibrant orange accent */
+}
+
+.navbar {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
-  background: transparent;
-  transition: 0.3s;
+  width: 100%;
+  padding: 20px;
   z-index: 1000;
-} */
-/* .navbar-scrolled {
-  background: white;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-} */
+  transition: all 0.4s ease;
+  background: transparent; /* Initial state: matches hero background */
+}
+
+/* State when user scrolls down */
+.navbar-scrolled {
+  padding: 15px 0;
+  background: var(--nav-bg-scrolled);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Adds a modern frosted glass effect */
+}
+
+.nav-content {
+  /* margin-bottom: 80px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  color: var(--nav-text);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.nav-links li:hover {
+  color: var(--nav-accent);
+}
+
+/* Contact Us Button Style */
+.nav-cta {
+  background: var(--nav-accent);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s !important;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+}
+
+/* Hamburger for Mobile */
+.menu-icon span {
+  background-color: var(--nav-text);
+}
+
 
 /* HOME */
 .hero {
@@ -217,6 +296,7 @@ body {
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 600;
+  margin-top: 4rem;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(255, 149, 0, 0.3);
 }
@@ -245,6 +325,7 @@ body {
   border: none;
   display: flex;
   gap: 1rem;
+  margin-bottom: 3.4rem;
 }
 
 /* Updated Buttons */
@@ -372,10 +453,16 @@ body {
 }
 
 .react { top: 20%; right: 10%; animation: floatBadge 5s ease-in-out infinite; }
-.node { bottom: 20%; left: 10%; animation: floatBadge 7s ease-in-out infinite reverse; }
-.flutter { top: 10%; left: 0%; animation: floatBadge 6s ease-in-out infinite; }
-/* .Kotlin { top: 20%; right: 10%; animation: floatBadge 4s ease-in-out infinite reverse; } */
+.node { bottom: 20%; left: 30%; animation: floatBadge 7s ease-in-out infinite reverse; }
+.flutter { top: 15%; left: 10%; animation: floatBadge 6s ease-in-out infinite; }
 .kotlin{ top: 30%; left: 0%; animation: floatBadge 5s ease-in-out infinite; }
+.java{ top: 35%; right: 8%; animation: floatBadge 6s ease-in-out infinite; }
+.php{ top: 20%; left: 30%; animation: floatBadge 7s ease-in-out infinite; }
+.python{ top: 15%; right: 30%; animation: floatBadge 8s ease-in-out infinite; }
+.javascript{ top: 60%; left: 0%; animation: floatBadge 9s ease-in-out infinite; }
+.firebase{ top: 80%; right: 20%; animation: floatBadge 10s ease-in-out infinite; }
+.sql{ top: 60%; left:75%; animation: floatBadge 8s ease-in-out infinite; }
+
 @keyframes floatCard {
   0%, 100% { transform: translateY(0) rotate(-1deg); }
   50% { transform: translateY(-20px) rotate(1deg); }
@@ -419,7 +506,7 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
-  padding: 40px;
+  padding: 42px 20px 10px 20px;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
@@ -437,7 +524,7 @@ body {
 .image-container {
   position: relative;
   width: 200px;
-  height: 180px;
+  height: 120px;
   margin: 0 auto 30px;
   display: flex;
   align-items: center;
@@ -447,7 +534,9 @@ body {
 .service-img {
   width: 100%;
   height: auto;
+  border-radius: 14px;
   z-index: 2;
+  margin: 32px 0;
   filter: drop-shadow(0 0 10px rgba(255, 149, 0, 0.5));
   transition: transform 0.5s ease;
 }
@@ -674,7 +763,11 @@ body {
   .item-1{
     width: 300px;
     }
+    .lively{
+      width: 200px;
+    }
 }
+/* @media (max-width){} */
 /* CONTACT */
 .contact-section {
   padding: 120px 0;

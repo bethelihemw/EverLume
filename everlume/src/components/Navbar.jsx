@@ -22,7 +22,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? "navbar-scrolled" : "navbar-scrolled"}`}>
+    <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="container nav-content">
         <div className="logo-wrapper" onClick={() => scrollToSection("home")}>
           <img src={logos} alt="EverLume Logo" className="nav-logo-img" />

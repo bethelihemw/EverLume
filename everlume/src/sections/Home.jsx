@@ -17,6 +17,10 @@ function Home() {
             Everlume crafts high-performance digital experiences. 
             We turn complex problems into clean, scalable, and powerful software.
           </p>
+          <p className="lead-para">
+              At EverLume, we don't just write code, we architect digital legacies. Our expertise 
+              spans the entire digital ecosystem.
+            </p>
           <div className="hero-btns">
             <button onClick={() => scrollToSection('contact')} className="btn btn-primary">Get Started</button>
             <button onClick={() => scrollToSection('services')} className="btn btn-outline">View Our Work</button>
@@ -53,7 +57,13 @@ function Home() {
         <div className="tech-badge react">React</div>
         <div className="tech-badge node">Node.js</div>
         <div className="tech-badge flutter">Flutter</div>
+        <div className="tech-badge java">Java</div>
         <div className="tech-badge kotlin">Kotlin</div>
+        <div className="tech-badge javascript">TypeScript</div>
+        <div className="tech-badge python">Python</div>
+        <div className="tech-badge php">PHP</div>
+        <div className="tech-badge sql">SQL</div>
+        <div className="tech-badge firebase">Firebase</div>
         {/* <div className="tech-badge code">code</div> */}
       </div>
       </div>

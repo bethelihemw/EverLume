@@ -6,14 +6,10 @@ function About() {
       <div className="container about-wrapper">
         <div className="about-text-content">
           <span className="about-badge">Our Story</span>
-          <h2 className="about-title">Engineering Excellence in the <span className="orange-text">Digital Era</span></h2>
+          <h2 className="about-title">Smart Solutions, Brighter  <span className="orange-text">Future</span></h2>
           
           <div className="about-description">
-            <p className="lead-para">
-              At EverLume, we don't just write code; we architect digital legacies. 
-              While our roots are deep in <strong>MERN stack development</strong>, our expertise 
-              spans the entire digital ecosystem.
-            </p>
+            
 
             <div className="about-expertise-grid">
               <div className="exp-item">

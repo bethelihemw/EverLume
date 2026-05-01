@@ -1,5 +1,5 @@
 
-import logo from "../assets/logo.png";
+import logos from "../assets/logos.png";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,7 +16,7 @@ function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src={logo} alt="Everlume Logo" />
+            <img src={logos} alt="Everlume Logo" />
             <span>Everlume</span>
           </div>
           <p>

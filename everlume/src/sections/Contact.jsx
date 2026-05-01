@@ -15,7 +15,7 @@ function Contact() {
               <span className="icon">📧</span>
               <div>
                 <h4>Email Us</h4>
-                <p>hello@everlume.dev</p>
+                <p>everlumetechnologies@gmail.com</p>
               </div>
             </div>
             <div className="method-item">
