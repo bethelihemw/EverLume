@@ -68,7 +68,7 @@ body {
 
 /* Glassmorphism effect when scrolling */
 .navbar-scrolled {
-  background: #000d21;
+  background: rgb(155, 188, 236);
   backdrop-filter: blur(50px);
   padding: 0.6rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -217,7 +217,7 @@ body {
 }
 
 :root {
-  --nav-bg-scrolled: #00235b; /* Deep blue from your logo */
+  --nav-bg-scrolled: #03122b; /* Deep blue from your logo */
   --nav-text: #ffffff;
   --nav-accent: #ff9500; /* Vibrant orange accent */
 }
@@ -236,7 +236,7 @@ body {
 /* State when user scrolls down */
 .navbar-scrolled {
   padding: 15px 0;
-  background: var(--nav-bg-scrolled);
+  background:#01173b;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px); /* Adds a modern frosted glass effect */
 }
@@ -326,7 +326,20 @@ body {
   gap: 4rem;
 }
 
-.badge {
+.badges {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 149, 0, 0.1);
+  color: var(--vibrant-orange);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 149, 0, 0.3);
+}
+.badge
+ {
   display: inline-block;
   padding: 6px 16px;
   background: rgba(255, 149, 0, 0.1);
@@ -370,17 +383,20 @@ body {
 .btn-primary {
   background: var(--vibrant-orange);
   color: white;
-  /* padding: 14px 32px; */
+  padding: 14px 32px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   box-shadow: 0 10px 20px rgba(255, 149, 0, 0.2);
 }
 
 .btn-outline {
   background: transparent;
   color: white;
+  font-size: 1rem;
+  font-weight: 500;
   border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 14px 32px;
   border-radius: 12px;
@@ -585,6 +601,10 @@ body {
   text-align: center;
   margin-bottom: 80px;
 }
+.title-reveal{
+  
+  margin-bottom: 18px;
+}
 
 .highlight {
   color: var(--vibrant-orange); /* #FF9500 */
@@ -592,7 +612,7 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
@@ -711,9 +731,9 @@ body {
 }
 
 .about-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* gap: 80px; */
   align-items: center;
 }
 
@@ -971,7 +991,9 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   font-size: 1.5rem;
 }
-
+.icon{
+  margin-bottom:3rem;
+}
 .method-item h4 {
   color: var(--deep-blue);
   font-size: 1rem;
@@ -981,6 +1003,7 @@ body {
 .contact-form-wrapper {
   background: white;
   padding: 40px;
+   margin-top: 3.5rem;
   margin-bottom: 3rem;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(0, 35, 91, 0.05);
@@ -1223,6 +1246,108 @@ body {
   .bottom-content {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
+  }
+}
+.about-interactive-flow {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+/* THE TERMINAL (Deep Blue) */
+.terminal-card {
+  flex: 1;
+  background: #001233; /* Ultra dark blue */
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #00ff41; /* Classic Terminal Green */
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff41;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+.log-line {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+/* THE MARQUEE (Vibrant Orange Accents) */
+.marquee-card {
+  flex: 1.5;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  overflow: hidden;
+  border:1px solid orange;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  background: #f1f5f9;
+  color: var(--deep-blue);
+  border-radius: 50px;
+  font-weight: 700;
+  border: 1px solid var(--vibrant-orange); /* Using your orange logo color */
+}
+
+/* ANIMATIONS */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* MOBILE VIEW (508px and under) */
+@media (max-width: 508px) {
+  .about-interactive-flow {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .terminal-card {
+    min-height: 200px;
+  }
+  /* .m */
+  .marquee-card h3 {
+    font-size: 1.1rem; /* Shrinking font as requested */
     text-align: center;
   }
 }

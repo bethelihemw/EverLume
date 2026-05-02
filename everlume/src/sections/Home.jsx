@@ -11,7 +11,7 @@ function Home() {
     <section id="home" className="hero">
       <div className="container hero-wrapper">
         <div className="hero-text">
-          <span className="badge">Next-Gen Software Solutions</span>
+          <span className="badges">Next-Gen Software Solutions</span>
           <h1> Smart Solutions, <span className="text-gradient">Brighter Future</span></h1>
           <p className="exper">
             Everlume crafts high-performance digital experiences. 

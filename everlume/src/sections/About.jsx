@@ -6,7 +6,7 @@ function About() {
       <div className="container about-wrapper">
         <div className="about-text-content">
           <span className="about-badge">Our Story</span>
-          <h2 className="about-title">" Smart Solutions, Brighter  <span className="orange-text">Future</span> "</h2>
+          <h2 className="about-title">" Smart Solutions, Brighter  <span className="orange-text">Future</span>"</h2>
           
           <div className="about-description">
             <div className="about-expertise-grid">
@@ -57,14 +57,42 @@ function About() {
           </div>
         </div>
 
-        <div className="about-visual-grid">
+        {/* <div className="about-visual-grid">
           <div className="grid-item item-1"></div>
           <div className="grid-item item-2"></div>
           <div className="grid-item item-3">
              <div className="logo-pulse">
              </div>
           </div>
+        </div> */}
+        <div className="about-interactive-flow">
+          {/* THE LIVE TERMINAL */}
+          <div className="flow-card terminal-card">
+            <div className="terminal-header">
+              <span className="status-dot"></span>
+              <p>SYSTEMS_ACTIVE</p>
+            </div>
+            <div className="terminal-body">
+              <p className="log-line">Initializing Paxos Protocol...</p>
+              <p className="log-line"> Scaling MERN Cluster...</p>
+              <p className="log-line"> UI/UX Audit: Complete</p>
+              <p className="log-line blink"> _</p>
+            </div>
+          </div>
+
+          {/* THE TECH MARQUEE (The sliding icons) */}
+          <div className="flow-card marquee-card">
+            <h3>Our Tech Ecosystem</h3>
+            <div className="marquee-wrapper">
+              <div className="marquee-content">
+                  <span>React</span><span>Node.js</span><span>MongoDB</span><span>Go</span><span>Next.js</span><span>Express</span>
+                  {/* Duplicate for seamless loop */}
+                  <span>React</span><span>Node.js</span><span>MongoDB</span><span>Go</span><span>Next.js</span><span>Express</span>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </div>
     </section>
   );
