@@ -12,7 +12,7 @@ function Home() {
       <div className="container hero-wrapper">
         <div className="hero-text">
           <span className="badge">Next-Gen Software Solutions</span>
-          <h1>Illuminate Your <span className="text-gradient">Digital Presence</span></h1>
+          <h1> Smart Solutions, <span className="text-gradient">Brighter Future</span></h1>
           <p className="exper">
             Everlume crafts high-performance digital experiences. 
             We turn complex problems into clean, scalable, and powerful software.

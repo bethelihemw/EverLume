@@ -10,7 +10,7 @@ function Services() {
       <div className="container">
         <div className="services-intro">
           <h2 className="title-reveal">Our <span className="highlight">Core</span> Expertise</h2>
-          <p>We don't just build software; we craft digital legacies.</p>
+          <p>We don't just build software, we craft digital legacies.</p>
         </div>
 
         <div className="services-grid">

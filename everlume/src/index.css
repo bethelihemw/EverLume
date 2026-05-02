@@ -47,6 +47,13 @@ body {
   --glass-bg: rgba(255, 255, 255, 0.8);
 }
 
+
+
+
+
+
+
+/* NAVBAR */
 .navbar {
   position: fixed;
   width: 100%;
@@ -61,7 +68,7 @@ body {
 
 /* Glassmorphism effect when scrolling */
 .navbar-scrolled {
-  background: var(--glass-bg);
+  background: #000d21;
   backdrop-filter: blur(50px);
   padding: 0.6rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -80,7 +87,7 @@ body {
 .logo-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   cursor: pointer;
 }
 
@@ -156,7 +163,38 @@ body {
   background: var(--deep-blue);
   transition: 0.4s;
 }
+@media (max-width: 508px) {
+  /* Ensure the container takes up the full width with minimal side padding */
+  .nav-content {
+    width: 100%;
+    padding: 0 12px; /* Adjust this to control how close to the edge it sits */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  /* Force the logo wrapper to the far left */
+  .logo-wrapper {
+    margin-left: 0;
+    gap: 8px; /* Slightly tighter gap for small screens */
+  }
+
+  /* Shrink the logo image slightly */
+  .nav-logo-img {
+    height: 22px; 
+  }
+
+  /* Reduce the font size of the "Everlume" text */
+  .logo-text {
+    font-size: 1.115rem; /* Down from 1.5rem */
+    /* letter-spac/ */
+  }
+
+  /* Ensure the hamburger icon stays on the far right */
+  .menu-icon {
+    margin-right: 0;
+  }
+}
 @media (max-width: 768px) {
   .menu-icon { display: flex; }
 
@@ -332,7 +370,7 @@ body {
 .btn-primary {
   background: var(--vibrant-orange);
   color: white;
-  padding: 14px 32px;
+  /* padding: 14px 32px; */
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -473,7 +511,7 @@ body {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(10px, -15px); }
 }
-@media (max-width: 785px){
+@media (max-width: 508px){
   .floating-card{
     width: 200px;
   }
@@ -481,12 +519,12 @@ body {
     width: 300px;
     height: 300px;
   }
-  .react { top: 20%; right: 20%; animation: floatBadge 5s ease-in-out infinite; }
-  .node { bottom: 25%; left: 35%; animation: floatBadge 7s ease-in-out infinite reverse; }
-  .flutter { top: 20%; left: 10%; animation: floatBadge 6s ease-in-out infinite; }
-  .kotlin{ top: 30%; left: 10%; animation: floatBadge 5s ease-in-out infinite; }
-  .java{ top: 35%; right: 8%; animation: floatBadge 6s ease-in-out infinite; }
-  .php{ top: 20%; left: 30%; animation: floatBadge 7s ease-in-out infinite; }
+  .react { top: 20%; right: 10%; animation: floatBadge 5s ease-in-out infinite; }
+  .node { bottom: 25%; left: 15%; animation: floatBadge 7s ease-in-out infinite reverse; }
+  .flutter { top: 15%; left: 10%; animation: floatBadge 6s ease-in-out infinite; }
+  .kotlin{ top: 30%; left:0%; animation: floatBadge 5s ease-in-out infinite; }
+  .java{ top: 35%; right: 2%; animation: floatBadge 6s ease-in-out infinite; }
+  .php{ top: 25%; left: 30%; animation: floatBadge 7s ease-in-out infinite; }
   .python{ top: 15%; right: 30%; animation: floatBadge 8s ease-in-out infinite; }
   .javascript{ top: 50%; left: 0%; animation: floatBadge 9s ease-in-out infinite; }
   .firebase{ top: 70%; right: 25%; animation: floatBadge 10s ease-in-out infinite; }
@@ -497,18 +535,34 @@ body {
   .hero-text p{
     font-size: 1rem;
   }
-  .hero-btns{
-    width: 20rem;
+  .btn-primary{
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 8rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* width: 20rem;
     margin: 60px auto;
-    padding: 5px;
+    padding: 5px; */
+  }
+  .btn-outline{
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 10rem;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .badge{
+    font-size: 0.65rem;
+    max-width: 12rem;
   }
   .exper{
-    margin: 5rem;
-    max-width: 35rem;
+    /* margin: 5rem; */
+    max-width: 100%;
   }
   .lead-para {
-    margin: 5rem;
-  max-width: 35rem;
+    /* margin: 5rem; */
+  max-width: 100%;
   }
 
 
@@ -633,6 +687,11 @@ body {
 
 .lively-card:hover .learn-more {
   letter-spacing: 2px;
+}
+@media(max-width: 508px){
+.title-reveal{
+  margin-bottom: 1rem;
+}
 }
 
 
