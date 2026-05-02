@@ -699,9 +699,13 @@ body {
 
 
 
+
+
+
+
 /* ABOUT */
 .about-section {
-  padding: 120px 0;
+  padding: 70px 0;
   background: #ffffff;
   overflow: hidden;
 }
@@ -760,24 +764,24 @@ body {
   }
   
 }
-@media (max-width: 448px){
+@media (max-width: 508px){
   .about-title{
-    width: 25rem;
-    font-size: 1.6rem;
+    width: 20rem;
+    font-size: 1.5rem;
 
   }
   .exp-item{
-    width: 23rem;
+    width: 20rem;
   }
   .closing-para{
-    width: 23rem;
+    width: 20rem;
   }
   .about-stats{
-    max-width: 23rem;
+    max-width: 20rem;
   }
-  .stat-card{
+  /* .stat-card{
     font-size: 1rem;
-  }
+  } */
   .item-1{
     max-width: 12rem;
     max-height: 20rem;
@@ -789,7 +793,7 @@ body {
   }
   .item-3{
     max-width: 6rem;
-    max-height: 7rem;
+    max-height: 6rem;
   }
 }
 
@@ -843,8 +847,8 @@ body {
 .about-visual-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 200px);
-  gap: 1px;
+  grid-template-rows: repeat(2, 140px);
+  gap: 22px;
 }
 
 .grid-item {
@@ -919,7 +923,7 @@ body {
 
 /* CONTACT */
 .contact-section {
-  padding: 120px 0;
+  padding: 0px 0;
   background-color: #f1f2f3;
 }
 
@@ -977,6 +981,7 @@ body {
 .contact-form-wrapper {
   background: white;
   padding: 40px;
+  margin-bottom: 3rem;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(0, 35, 91, 0.05);
 }
@@ -1044,6 +1049,31 @@ body {
   .contact-container {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+}
+@media( max-width: 508px){
+  .contact-info h2{
+    font-size: 2rem;
+    max-width: 20rem;
+    /* align-items: center; */
+    text-align: center;
+  }
+  .contact-info p{
+    max-width: 20rem;
+    text-align: center;
+  }
+  .badge{
+    margin-left: 7rem;
+    margin-bottom: 8px;
+  }
+  .contact-methods{
+    max-width: 20rem;
+  }
+  .contact-methods p{
+    font-size: 16px;
+  }
+  .icon{
+    margin-bottom: 2.3rem;
   }
 }
 

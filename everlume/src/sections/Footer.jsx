@@ -42,27 +42,23 @@ function Footer() {
             <li>Mobile Applications</li>
             <li>UI/UX Design</li>
             <li>Strategic Consulting</li>
+            <li>AI Engineering</li>
           </ul>
         </div>
 
-        <div className="footer-newsletter">
+        {/* <div className="footer-newsletter">
           <h4>Stay Updated</h4>
           <p>Subscribe to our newsletter for tech insights.</p>
           <div className="newsletter-box">
             <input type="email" placeholder="Email Address" />
             <button className="arrow-btn">→</button>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-bottom">
         <div className="container bottom-content">
           <p>&copy; {currentYear} Everlume. All rights reserved.</p>
-          <div className="social-links">
-            <a href="#link">LinkedIn</a>
-            <a href="#link">GitHub</a>
-            <a href="#link">Twitter</a>
-          </div>
         </div>
       </div>
     </footer>

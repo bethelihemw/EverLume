@@ -6,7 +6,7 @@ function About() {
       <div className="container about-wrapper">
         <div className="about-text-content">
           <span className="about-badge">Our Story</span>
-          <h2 className="about-title">Smart Solutions, Brighter  <span className="orange-text">Future</span></h2>
+          <h2 className="about-title">" Smart Solutions, Brighter  <span className="orange-text">Future</span> "</h2>
           
           <div className="about-description">
             <div className="about-expertise-grid">

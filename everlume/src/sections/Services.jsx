@@ -47,8 +47,8 @@ function Services() {
     },
     { 
       img: ai, 
-      title: "Distributed Systems", 
-      desc: "Implementing robust consensus mechanisms and RPC protocols for high-availability systems.", 
+      title: "AI Engineering", 
+      desc: "Build and Deploy intelligent systems that can learn form data and make decisions .", 
       delay: "0.35s" 
     }
 
