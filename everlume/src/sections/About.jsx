@@ -9,8 +9,6 @@ function About() {
           <h2 className="about-title">Smart Solutions, Brighter  <span className="orange-text">Future</span></h2>
           
           <div className="about-description">
-            
-
             <div className="about-expertise-grid">
               <div className="exp-item">
                 <h4>Full-Stack & Mobile</h4>
@@ -64,7 +62,6 @@ function About() {
           <div className="grid-item item-2"></div>
           <div className="grid-item item-3">
              <div className="logo-pulse">
-                
              </div>
           </div>
         </div>

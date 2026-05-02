@@ -13,7 +13,7 @@ function Home() {
         <div className="hero-text">
           <span className="badge">Next-Gen Software Solutions</span>
           <h1>Illuminate Your <span className="text-gradient">Digital Presence</span></h1>
-          <p>
+          <p className="exper">
             Everlume crafts high-performance digital experiences. 
             We turn complex problems into clean, scalable, and powerful software.
           </p>
@@ -30,8 +30,6 @@ function Home() {
         <div className="hero-visual">
         {/* This is the abstract glow you already have */}
         <div className="abstract-shape"></div>
-        
-        {/* New: The Floating UI Card */}
         <div className="floating-card">
           <div className="card-header">
             <div className="browser-dots">
@@ -52,8 +50,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-        {/* New: Floating Tech Badges */}
         <div className="tech-badge react">React</div>
         <div className="tech-badge node">Node.js</div>
         <div className="tech-badge flutter">Flutter</div>
